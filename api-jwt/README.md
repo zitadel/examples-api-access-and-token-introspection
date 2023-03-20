@@ -1,6 +1,10 @@
 # Secure an API in ZITADEL using the JSON Web Token Profile
 
-## 1. Register the API in ZITADEL and Generate Private and Public Keys
+## Table of Contents
+[1. Register the API in ZITADEL and Generate Private and Public Keys](#1)
+
+
+## 1. Register the API in ZITADEL and Generate Private and Public Keys <a name="1"></a>
 
 1. Go to your Project and click on the **New** button as shown below. 
 

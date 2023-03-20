@@ -51,7 +51,7 @@
 6. When you click on **URLs** on the left, you will see the relevant OIDC URLs. Note down the **issuer** URL, **token_endpoint** and **introspection_endpoint**.  
 
 <img
-    src="screenshots/10.png"
+    src="screenshots/6.png"
     width="75%"
     alt="Register the API"
 />
@@ -59,7 +59,7 @@
 7. Also note down the **Resource ID** of your project.   
 
 <img
-    src="screenshots/11.png"
+    src="screenshots/7.png"
     width="75%"
     alt="Register the API"
 />

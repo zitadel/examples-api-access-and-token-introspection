@@ -4,7 +4,7 @@
 
 1. Go to your Project and click on the **New** button as shown below. 
 <img
-    src="./api-jwt-screenshots/1.png"
+    src="screenshots/1.png"
     width="100%"
     alt="Register the API"
 />

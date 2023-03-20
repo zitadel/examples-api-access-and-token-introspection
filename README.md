@@ -20,3 +20,13 @@ If there are client APIs or systems that need to access other protected APIs, th
   - [Test Client Credentials for Serivce Users](https://github.com/dakshitha/api-access-and-token-introspection/tree/main/service-user-client-credentials)
 - [Personal Access Tokens (PAT)](https://zitadel.com/docs/guides/integrate/pat) 
   - [Test Personal Access Tokens for Service Users](https://github.com/dakshitha/api-access-and-token-introspection/tree/main/service-user-pat)
+  
+
+## Prerequisites to Run the Samples: 
+
+- Have Python3 installed in your machine.
+- Create a free ZITADEL account here - https://zitadel.cloud/
+- Create an instance as explained [here](https://zitadel.com/docs/guides/start/quickstart#2-create-your-first-instance). 
+- Create a new project in your instance by following the steps [here](https://zitadel.com/docs/guides/start/quickstart#2-create-your-first-instance).
+
+

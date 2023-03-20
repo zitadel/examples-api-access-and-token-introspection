@@ -20,7 +20,19 @@ If there are client APIs or systems that need to access other protected APIs, th
   - [Test Client Credentials for Serivce Users](https://github.com/dakshitha/api-access-and-token-introspection/tree/main/service-user-client-credentials)
 - [Personal Access Tokens (PAT)](https://zitadel.com/docs/guides/integrate/pat) 
   - [Test Personal Access Tokens for Service Users](https://github.com/dakshitha/api-access-and-token-introspection/tree/main/service-user-pat)
-  
+
+
+
+## All Possible Combinations: 
+| **#** | **Grant and Token Type Used by Service User**                                         | **How the Application API Invokes the Introspection Endpoint** |
+|-------|---------------------------------------------------------------------------------------|----------------------------------------------------------------|
+| 1     | Send JWT to ZITADEL to receive an opaque token or JWT and send the received token to API | JWT Profile                                                    |
+| 2     | Send JWT to ZITADEL to receive an opaque token or JWT and send the received token to API | Basic Authentication                                           |
+| 3     | Send Client ID and Client Secret to ZITADEL and receive an opaque token or JWT and send the received token to API (Client Credentials) | JWT Profile                                                    |
+| 4     | Send Client ID and Client Secret to ZITADEL and receive an opaque token or JWT and send the received token to API (Client Credentials) | Basic Authentication                                           |
+| 5     | Send a static access token to API (Personal Access Token)                            | JWT Profile                                                    |
+| 6     | Send a static access token to API (Personal Access Token)                            | Basic Authentication                                           |
+
 
 ## Prerequisites to Run the Samples: 
 

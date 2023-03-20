@@ -4,7 +4,8 @@
 ## API Application:
 If you have an API that behaves as an OAuth resource server that can be accessed by user-facing applications and need to validate an access token by calling the ZITADEL introspection API, you can use the following methods to register these APIs in ZITADEL: 
 
-- [JSON Web Token (JWT) Profile (Recommended)](https://zitadel.com/docs/apis/openidoauth/authn-methods#client-secret-basic) - [Test it](https://github.com/dakshitha/api-access-and-token-introspection/tree/main/api-jwt)
+- [JSON Web Token (JWT) Profile (Recommended)](https://zitadel.com/docs/apis/openidoauth/authn-methods#client-secret-basic) 
+- - [Test JWT Profile](https://github.com/dakshitha/api-access-and-token-introspection/tree/main/api-jwt)
 - [Basic Authentication](https://zitadel.com/docs/apis/openidoauth/authn-methods#client-secret-basic) - [Test it](https://github.com/dakshitha/api-access-and-token-introspection/tree/main/api-basic-authentication)
 
 

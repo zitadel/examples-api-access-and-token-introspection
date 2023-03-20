@@ -8,7 +8,7 @@
 
 ## 1. Prerequisites <a name="1"></a>
 
-You must have the backend API running and secured with one of the following ways (follow either links for instructions on how to set up and run the API): 
+You must have the backend API running and secured with one of the following ways (follow either link for instructions on how to set up and run the API): 
 
 1. [JSON Web Token (JWT) Profile](https://github.com/dakshitha/api-access-and-token-introspection/tree/main/api-jwt)
 2. [Basic Authentication](https://github.com/dakshitha/api-access-and-token-introspection/tree/main/api-basic-authentication)
@@ -95,6 +95,7 @@ You must have the backend API running and secured with one of the following ways
 />
 
 10. You will now see that your service user has been assigned the role **read:messages**. 
+
 <img
     src="screenshots/10.png"
     width="75%"
@@ -110,7 +111,7 @@ You must have the backend API running and secured with one of the following ways
 4. Copy the printed access token and set the value to a shell variable called `TOKEN` as shown below: 
 
 <img
-    src="screenshots/9.png"
+    src="screenshots/11.png"
     width="75%"
     alt="Register the API"
 />
@@ -145,83 +146,12 @@ If you invoke the same resource without an access token (i.e., `curl -X GET http
 
 `curl -X GET -H "Authorization: Bearer $TOKEN" http://localhost:5000/api/private-scoped`
 
-You should then get a Status Code 403, Forbidden error because the user does not have the role `read:messages`.
-
-In order to access this route, you must create the role `read:messages` in your ZITADEL project and also create an authorization for the service user you created by adding the role to the user. Follow these steps to do so: 
-
-1. Go to your project and select **Roles**. Click **New**. 
-
-<img
-    src="screenshots/scopes/1.png"
-    width="75%"
-    alt="Register the API"
-/>
-
-2. Add the `read:messages` role as shown below and click **Save**. 
-
-<img
-    src="screenshots/scopes/2.png"
-    width="75%"
-    alt="Register the API"
-/>
-
-3. You will see the created role listed. 
-
-<img
-    src="screenshots/scopes/3.png"
-    width="75%"
-    alt="Register the API"
-/>
-
-4. To assign this role to a user, click on **Authorizations**. 
-<img
-    src="screenshots/scopes/4.png"
-    width="75%"
-    alt="Register the API"
-/>
-
-5. Select the user you want to assign the role to. 
-<img
-    src="screenshots/scopes/5.png"
-    width="75%"
-    alt="Register the API"
-/>
-
-6. Select the project where this authorization is applicable. 
-<img
-    src="screenshots/scopes/6.png"
-    width="75%"
-    alt="Register the API"
-/>
-
-7. Click **Continue**.
-<img
-    src="screenshots/scopes/7.png"
-    width="75%"
-    alt="Register the API"
-/>
-
-8. Select the role **read:messages** and click **Save**. 
-<img
-    src="screenshots/scopes/8.png"
-    width="75%"
-    alt="Register the API"
-/>
-
-9. You will now see that your service user has been assigned the role **read:messages**. 
-<img
-    src="screenshots/scopes/9.png"
-    width="75%"
-    alt="Register the API"
-/>
-
-Regenerate the token and invoke the protected resource again: 
-
-`curl -X GET -H "Authorization: Bearer $TOKEN" http://localhost:5000/api/private-scoped`
-
 You should get a response with Status Code 200 and the following message.
 
 `{"message":"Private, scoped route - You need to be authenticated and have the role read:messages to see this."}`
+
+If you remove the role `read:messages` from your service user in the ZITADEL console and invoke this resource again, you should then get a Status Code 403, Forbidden error because the user does not have the role `read:messages`.
+
 
 
 

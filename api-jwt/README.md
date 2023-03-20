@@ -121,7 +121,7 @@ The API has three routes:
 4. Run the API by running `python3 server.py` in the terminal. 
 
 
-## 3. [Invoke this API] <a name="3"></a>
+## 3. Invoke this API <a name="3"></a>
 
 Obtain an access token as a ZITADEL service user via one of the following approaches (click the links to see instructions on how to obtain the token and invoke this API): 
     - [JSON Web Token Profile](https://github.com/dakshitha/api-access-and-token-introspection/tree/main/service-user-jwt)

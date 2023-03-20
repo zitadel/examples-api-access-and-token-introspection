@@ -2,7 +2,7 @@
 
 ## ToC
 1. [Prerequisites](#1)
-2. [Create a Service User and Personal Access Token(#2)
+2. [Create a Service User and Personal Access Token](#2)
 3. [Invoke the API](#3)
 
 ## 1. Prerequisites <a name="1"></a>
@@ -32,7 +32,7 @@ You must have the backend API running and secured with one of the following ways
 />
 
 
-3. Click on **Actions**. 
+3. Click on **Personal Access Tokens**. 
 
 <img
     src="screenshots/3.png"
@@ -41,7 +41,7 @@ You must have the backend API running and secured with one of the following ways
 />
 
 
-4. Select **Generate Client Secret**. 
+4. You can create one or more PATs for your user. We will create one now. Click on **New**.  
 
 <img
     src="screenshots/4.png"
@@ -50,7 +50,7 @@ You must have the backend API running and secured with one of the following ways
 />
 
 
-5. Copy your Client ID and Client Secret. Click **Close**. 
+5. Select an expiration date for the token or you can leave it empty. Click **Add**. 
 
 <img
     src="screenshots/5.png"
@@ -59,7 +59,7 @@ You must have the backend API running and secured with one of the following ways
 />
 
 
-6. Next we will add a role to the created service user. Click on **Authorizations** and click on **New** as shown below: 
+6. Copy the generated access token and click **Close**.  
 
 <img
     src="screenshots/6.png"
@@ -68,7 +68,7 @@ You must have the backend API running and secured with one of the following ways
 />
 
 
-7. The user is already selected for you. Now select the **Project**. 
+7. You will see the token listed for the service user.  
 
 <img
     src="screenshots/7.png"
@@ -76,30 +76,6 @@ You must have the backend API running and secured with one of the following ways
     alt="Register the API"
 />
 
-
-8. You will see the following screen afterwards. Click on **Continue**. 
-
-<img
-    src="screenshots/8.png"
-    width="75%"
-    alt="Register the API"
-/>
-
-9. Select the role **read:messages** and click **Save**.
-
-<img
-    src="screenshots/9.png"
-    width="75%"
-    alt="Register the API"
-/>
-
-10. You will now see that your service user has been assigned the role **read:messages**. 
-
-<img
-    src="screenshots/10.png"
-    width="75%"
-    alt="Register the API"
-/>
 
 
 ## 3. Invoke the API with Token

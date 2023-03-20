@@ -9,12 +9,13 @@
 ## 1. Prerequisites <a name="1"></a>
 
 You must have the backend API running and secured with one of the following ways (follow either links for instructions on how to set up and run the API): 
-1.[JSON Web Token (JWT) Profile](https://github.com/dakshitha/api-access-and-token-introspection/tree/main/api-jwt)
-2.[Basic Authentication](https://github.com/dakshitha/api-access-and-token-introspection/tree/main/api-basic-authentication)
+
+1. [JSON Web Token (JWT) Profile](https://github.com/dakshitha/api-access-and-token-introspection/tree/main/api-jwt)
+2. [Basic Authentication](https://github.com/dakshitha/api-access-and-token-introspection/tree/main/api-basic-authentication)
 
 ## 2. Create a Service User with Client Credentials in ZITADEL <a name="2"></a>
 
-1. Go to the **Users** tab in your organization as shown below and click on the **Service Users** tab.
+1. Go to the **Users** tab in your organization as shown below and click on the **Service Users** tab. To add a service user, click on the **New** button.
 
 <img
     src="screenshots/1.png"
@@ -23,7 +24,7 @@ You must have the backend API running and secured with one of the following ways
 />
 
 
-2. To add a service user, click on the **New** button. 
+2. Next, add the details of the service user and select either **Bearer** or **JWT** for **Access Token Type** and click on **Create**. For this example, we will select **Bearer**.  
 
 <img
     src="screenshots/2.png"
@@ -32,7 +33,7 @@ You must have the backend API running and secured with one of the following ways
 />
 
 
-3. Next, add the details of the service user and select either **Bearer** or **JWT** for **Access Token Type** and click on **Create**. For this example, we will select **JWT**. 
+3. Click on **Actions**. 
 
 <img
     src="screenshots/3.png"
@@ -41,7 +42,7 @@ You must have the backend API running and secured with one of the following ways
 />
 
 
-4. Now you will see the saved details. 
+4. Select **Generate Client Secret**. 
 
 <img
     src="screenshots/4.png"
@@ -50,7 +51,7 @@ You must have the backend API running and secured with one of the following ways
 />
 
 
-5. Next,  we need to generate a private-public key pair in ZITADEL and you must get the private key to sign your JWT.  Go to **Keys** and click on **New**.
+5. Copy your Client ID and Client Secret. Click **Close**. 
 
 <img
     src="screenshots/5.png"
@@ -59,7 +60,7 @@ You must have the backend API running and secured with one of the following ways
 />
 
 
-6. Select type **JSON** and click **Add**. 
+6. Next we will add a role to the created service user. Click on **Authorizations** and click on **New** as shown below: 
 
 <img
     src="screenshots/6.png"
@@ -68,7 +69,7 @@ You must have the backend API running and secured with one of the following ways
 />
 
 
-7. Download the key by clicking **Download**. After the download, click **Close**. 
+7. The user is already selected for you. Now select the **Project**. 
 
 <img
     src="screenshots/7.png"
@@ -77,10 +78,22 @@ You must have the backend API running and secured with one of the following ways
 />
 
 
-8. You will see the following screen afterwards. 
+8. You will see the following screen afterwards. Click on **Continue**. 
 
 <img
     src="screenshots/8.png"
+    width="75%"
+    alt="Register the API"
+/>
+
+<img
+    src="screenshots/9.png"
+    width="75%"
+    alt="Register the API"
+/>
+
+<img
+    src="screenshots/10.png"
     width="75%"
     alt="Register the API"
 />

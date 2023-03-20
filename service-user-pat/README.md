@@ -2,7 +2,7 @@
 
 ## ToC
 1. [Prerequisites](#1)
-2. [Create a Service User and Personal Access Token](#2)
+2. [Create a Service User and Personal Access Token(PAT) in ZITADEL](#2)
 3. [Invoke the API](#3)
 
 ## 1. Prerequisites <a name="1"></a>
@@ -12,7 +12,7 @@ You must have the backend API running and secured with one of the following ways
 1. [JSON Web Token (JWT) Profile](https://github.com/dakshitha/api-access-and-token-introspection/tree/main/api-jwt)
 2. [Basic Authentication](https://github.com/dakshitha/api-access-and-token-introspection/tree/main/api-basic-authentication)
 
-## 2. Create a Service User with a Personal Access Token in ZITADEL <a name="2"></a>
+## 2. Create a Service User with a Personal Access Token(PAT) in ZITADEL <a name="2"></a>
 
 1. Go to the **Users** tab in your organization as shown below and click on the **Service Users** tab. To add a service user, click on the **New** button.
 
@@ -94,7 +94,13 @@ You should get a response with Status Code 200 and the following message.
 
 `{"message":"Public route - You don't need to be authenticated to see this."}`
 
-2. Invoke the private resource using the following cURL command:
+2. Invoke the private resource:
+
+Copy the Personal Access Token and assign it to a shell variable called TOKEN as shown below:
+
+`TOKEN=<PAT>`
+
+Invoke the private resource using the following cURL command
 
 `curl -X GET -H "Authorization: Bearer $TOKEN" http://localhost:5000/api/private`
 
@@ -108,13 +114,16 @@ If you invoke the same resource without an access token (i.e., `curl -X GET http
 
 `curl -X GET -H "Authorization: Bearer $TOKEN" http://localhost:5000/api/private-scoped`
 
+You should then get a Status Code 403, Forbidden error because the user does not have the role `read:messages`.
+
+In order to access this route, you must create the role `read:messages` in your ZITADEL project and also create an authorization for the service user you created by adding the role to the user. Follow these [instructions](https://github.com/dakshitha/api-access-and-token-introspection/blob/main/service-user-jwt/README.md#41-create-a-role-and-assign-the-role-to-the-service-user-) to do so.  
+
+Once you have assigned the role to the user, generate another PAT and invoke the protected resource with that PAT (remember to reset the TOKEN variable to the new PAT in the command line):  
+
+`curl -X GET -H "Authorization: Bearer $TOKEN" http://localhost:5000/api/private-scoped`
+
 You should get a response with Status Code 200 and the following message.
 
 `{"message":"Private, scoped route - You need to be authenticated and have the role read:messages to see this."}`
-
-If you remove the role `read:messages` from your service user in the ZITADEL console and invoke this resource again, you should then get a Status Code 403, Forbidden error because the user does not have the role `read:messages`.
-
-
-
 
 

@@ -15,11 +15,11 @@
 11. The key that you downloaded will be of the following format. 
 ```
 {
-"type":"application",
-"keyId":"<YOUR_KEY_ID>",
-"key":"-----BEGIN RSA PRIVATE KEY-----\<YOUR_PRIVATE_KEY>\n-----END RSA PRIVATE KEY-----\n",
-"appId":"<YOUR_APP_ID>",
-"clientId":"<YOUR_CLIENT_ID>"
+  "type":"application",
+  "keyId":"<YOUR_KEY_ID>",
+  "key":"-----BEGIN RSA PRIVATE KEY-----\<YOUR_PRIVATE_KEY>\n-----END RSA PRIVATE KEY-----\n",
+  "appId":"<YOUR_APP_ID>",
+  "clientId":"<YOUR_CLIENT_ID>"
 }
 ```
 12. Also note down the **Resource ID** of your project. 

@@ -120,29 +120,83 @@ The API has three routes:
 - "/api/private-scoped" - A valid access token and a "read:messages" scope are required.
 
 1. Invoke the public resource using the following cURL command:
+
 `curl -X GET http://localhost:5000/api/public`
 
 You should get a response with Status Code 200 and the following message.
+
 `{"message":"Public route - You don't need to be authenticated to see this."}`
 
 2. Invoke the private resource using the following cURL command:
+
 `curl -X GET -H "Authorization: Bearer $TOKEN" http://localhost:5000/api/private`
 
 You should get a response with Status Code 200 and the following message.
+
 `{"message":"Private route - You need to be authenticated to see this."}`
 
 If you invoke the same resource without an access token (i.e., `curl -X GET http://localhost:5000/api/private`), you will see a 401 error. 
 
 3. Invoke the private route that requires the user to have a certain role using the following cURL command: 
+
 `curl -X GET -H "Authorization: Bearer $TOKEN" http://localhost:5000/api/private-scoped`
 
 You should get a response with Status Code 200 and the following message.
-{"message":"Private, scoped route - You need to be authenticated and have the role read:messages to see this."}
+
+`{"message":"Private, scoped route - You need to be authenticated and have the role read:messages to see this."}`
 
 In order to access this route, you must create the role `read:messages` in your ZITADEL project and also create an authorization for the service user you created by adding the role to the user. Follow these steps to do so: 
 
 <img
     src="screenshots/scopes/1.png"
+    width="75%"
+    alt="Register the API"
+/>
+
+<img
+    src="screenshots/scopes/2.png"
+    width="75%"
+    alt="Register the API"
+/>
+
+<img
+    src="screenshots/scopes/3.png"
+    width="75%"
+    alt="Register the API"
+/>
+
+<img
+    src="screenshots/scopes/4.png"
+    width="75%"
+    alt="Register the API"
+/>
+
+<img
+    src="screenshots/scopes/5.png"
+    width="75%"
+    alt="Register the API"
+/>
+
+<img
+    src="screenshots/scopes/6.png"
+    width="75%"
+    alt="Register the API"
+/>
+
+<img
+    src="screenshots/scopes/7.png"
+    width="75%"
+    alt="Register the API"
+/>
+
+<img
+    src="screenshots/scopes/8.png"
+    width="75%"
+    alt="Register the API"
+/>
+
+<img
+    src="screenshots/scopes/9.png"
     width="75%"
     alt="Register the API"
 />

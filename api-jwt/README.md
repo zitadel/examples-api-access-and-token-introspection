@@ -1,7 +1,9 @@
 # Secure an API in ZITADEL using the JSON Web Token Profile
 
-## Table of Contents
+## ToC
 [1. Register the API in ZITADEL and Generate Private and Public Keys](#1)
+[2. Run this API](#2)
+[3. Invoke this API](#3)
 
 
 ## 1. Register the API in ZITADEL and Generate Private and Public Keys <a name="1"></a>
@@ -104,7 +106,7 @@
     alt="Register the API"
 />
 
-## 2. Run the API
+## 2. Run this API <a name="2"></a>
 
 The API has three routes:
 
@@ -116,4 +118,14 @@ The API has three routes:
 1. cd to this directory: `cd api-jwt`
 2. Copy the content in your downloaded key file to api-key-file.json.
 3. Replace the values of ZITADEL_DOMAIN and ZITADEL_INTROSPECTION_URL in the .env file with your values you obtained earlier. 
-4. Run the API by running `python3 server.py` in the command line. 
+4. Run the API by running `python3 server.py` in the terminal. 
+
+
+## 3. Invoke this API] <a name="3"></a>
+
+Obtain an access token as a ZITADEL service user via one of the following approaches (click the links to see instructions on how to obtain the token and invoke this API): 
+    - [JSON Web Token Profile](https://github.com/dakshitha/api-access-and-token-introspection/tree/main/service-user-jwt)
+    - [Client Credentials](https://github.com/dakshitha/api-access-and-token-introspection/tree/main/service-user-client-credentials) 
+    - [Personal Access Token](https://github.com/dakshitha/api-access-and-token-introspection/tree/main/service-user-pat)
+
+

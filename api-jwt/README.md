@@ -3,6 +3,13 @@
 ## 1. Register the API in ZITADEL and Generate Private and Public Keys
 
 1. Go to your Project and click on the **New** button as shown below. 
+<figure>
+  <img
+    src="/api-jwt-screenshots/1.png"
+    width="100%"
+    alt="Register the API"
+  />
+</figure>
 2.  Give a name to your application (Test API is the name given below) and select type **API**. 
 3. Select **JWT** as the authentication method and click **Continue**.  
 4. Now review your configuration and click **Create**. 

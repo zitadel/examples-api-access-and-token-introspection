@@ -116,7 +116,7 @@ The API has three routes:
 
 
 1. cd to this directory: `cd api-jwt`
-2. Copy the content in your downloaded key file to api-key-file.json.
+2. Copy the content in your downloaded key file to `api-key-file.json`.
 3. Replace the values of ZITADEL_DOMAIN and ZITADEL_INTROSPECTION_URL in the .env file with your values you obtained earlier. 
 4. Run the API by running `python3 server.py` in the terminal. 
 

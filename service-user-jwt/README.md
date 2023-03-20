@@ -1,12 +1,18 @@
 # Call a Secured API Using JSON Web Token (JWT) Profile 
 
 ## ToC
-1. [Create a Service User and Private/Public Keys in ZITADEL](#1)
-2. [Generate a Token](#2)
-3. [Invoke the API](#3)
+1. Prerequisites(#1)
+2. [Create a Service User and Private/Public Keys in ZITADEL](#2)
+3. [Generate a Token](#3)
+4. [Invoke the API](#4)
 
+## 1. Prerequisites <a name="1"></a>
 
-## 1. Create a Service User and Private/Public Keys in ZITADEL <a name="1"></a>
+You must have the backend API running and secured with one of the following ways (follow either links for instructions on how to set up and run the API): 
+1.[JSON Web Token (JWT) Profile](https://github.com/dakshitha/api-access-and-token-introspection/tree/main/api-jwt)
+2.[Basic Authentication](https://github.com/dakshitha/api-access-and-token-introspection/tree/main/api-basic-authentication)
+
+## 2. Create a Service User and Private/Public Keys in ZITADEL <a name="2"></a>
 
 1. Go to the **Users** tab in your organization as shown below and click on the **Service Users** tab.
 
@@ -91,7 +97,7 @@
 }
 ```
 
-##2. Generate a Token <a name="2"></a>
+## 3. Generate a Token <a name="3"></a>
 
 1. cd to this directory: `cd service-user-jwt`
 2. Copy the content in your downloaded key file to `client-key-file.json`.
@@ -105,6 +111,41 @@
     alt="Register the API"
 />
 
+## 4. Invoke the API with Token
+
+The API has three routes:
+
+- "/api/public" - No access token is required.
+- "/api/private" - A valid access token is required.
+- "/api/private-scoped" - A valid access token and a "read:messages" scope are required.
+
+1. Invoke the public resource using the following cURL command:
+`curl -X GET http://localhost:5000/api/public`
+
+You should get a response with Status Code 200 and the following message.
+`{"message":"Public route - You don't need to be authenticated to see this."}`
+
+2. Invoke the private resource using the following cURL command:
+`curl -X GET -H "Authorization: Bearer $TOKEN" http://localhost:5000/api/private`
+
+You should get a response with Status Code 200 and the following message.
+`{"message":"Private route - You need to be authenticated to see this."}`
+
+If you invoke the same resource without an access token (i.e., `curl -X GET http://localhost:5000/api/private`), you will see a 401 error. 
+
+3. Invoke the private route that requires the user to have a certain role using the following cURL command: 
+`curl -X GET -H "Authorization: Bearer $TOKEN" http://localhost:5000/api/private-scoped`
+
+You should get a response with Status Code 200 and the following message.
+{"message":"Private, scoped route - You need to be authenticated and have the role read:messages to see this."}
+
+In order to access this route, you must create the role `read:messages` in your ZITADEL project and also create an authorization for the service user you created by adding the role to the user. Follow these steps to do so: 
+
+<img
+    src="screenshots/scopes/1.png"
+    width="75%"
+    alt="Register the API"
+/>
 
 
 Reference

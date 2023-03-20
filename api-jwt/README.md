@@ -102,7 +102,14 @@
 
 ## 2. Run the API
 
+The API has three routes:
+
+"/api/public" - No access token is required.
+"/api/private" - A valid access token is required.
+"/api/private-scoped" - A valid access token and a "read:messages" scope are required.
+
+
 1. cd to this directory: `cd api-jwt`
 2. Copy the content in your downloaded key file to api-key-file.json.
 3. Replace the values of ZITADEL_DOMAIN and ZITADEL_INTROSPECTION_URL in the .env file with your values you obtained earlier. 
-4. Run the API by running `python3 server.py`
+4. Run the API by running `python3 server.py` in the command line. 

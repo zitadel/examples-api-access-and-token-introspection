@@ -8,7 +8,7 @@
 
 ## 1. Prerequisites <a name="1"></a>
 
-You must have the backend API running and secured with one of the following ways (follow either links for instructions on how to set up and run the API): 
+You must have the backend API running and secured with one of the following ways (follow either link for instructions on how to set up and run the API): 
 
 1. [JSON Web Token (JWT) Profile](https://github.com/dakshitha/api-access-and-token-introspection/tree/main/api-jwt)
 2. [Basic Authentication](https://github.com/dakshitha/api-access-and-token-introspection/tree/main/api-basic-authentication)

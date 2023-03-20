@@ -144,6 +144,8 @@ If you invoke the same resource without an access token (i.e., `curl -X GET http
 
 You should then get a Status Code 403, Forbidden error because the user does not have the role `read:messages`.
 
+### 4.1 Create a Role and Assign the Role to the Service User <a name="4.1"></a>
+
 In order to access this route, you must create the role `read:messages` in your ZITADEL project and also create an authorization for the service user you created by adding the role to the user. Follow these steps to do so: 
 
 1. Go to your project and select **Roles**. Click **New**. 

@@ -91,4 +91,22 @@
 }
 ```
 
+##2. Generate a Token <a name="2"></a>
+
+1. cd to this directory: `cd service-user-jwt`
+2. Copy the content in your downloaded key file to `client-key-file.json`.
+3. Replace the values of PROJECT_ID, ZITADEL_DOMAIN and ZITADEL_TOKEN_URL n the .env file with your values you obtained earlier.
+4. Run the script to generate a token by running `python3 jwt-profile-token-generator.py` in the terminal.
+5. Copy the printed access token and set the value to a shell variable called `TOKEN` as shown below: 
+
+<img
+    src="screenshots/9.png"
+    width="75%"
+    alt="Register the API"
+/>
+
+
+
+Reference
+https://zitadel.com/docs/guides/integrate/serviceusers#3-with-this-jwt-request-an-oauth-token-from-zitadel
 

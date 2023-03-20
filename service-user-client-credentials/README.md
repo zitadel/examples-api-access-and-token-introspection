@@ -86,12 +86,15 @@ You must have the backend API running and secured with one of the following ways
     alt="Register the API"
 />
 
+9. Select the role **read:messages** and click **Save**.
+
 <img
     src="screenshots/9.png"
     width="75%"
     alt="Register the API"
 />
 
+10. You will now see that your service user has been assigned the role **read:messages**. 
 <img
     src="screenshots/10.png"
     width="75%"
@@ -99,24 +102,12 @@ You must have the backend API running and secured with one of the following ways
 />
 
 
-9. The downloaded key will be of the following format: 
-
-```
-{
-    "type":"serviceaccount",
-    "keyId":"<YOUR_KEY_ID>",
-    "key":"-----BEGIN RSA PRIVATE KEY-----\n<YOUR_KEY>\n-----END RSA PRIVATE KEY-----\n",
-    "userId":"<YOUR_USER_ID>"
-}
-```
-
 ## 3. Generate a Token <a name="3"></a>
 
-1. cd to this directory: `cd service-user-jwt`
-2. Copy the content in your downloaded key file to `client-key-file.json`.
-3. Replace the values of PROJECT_ID, ZITADEL_DOMAIN and ZITADEL_TOKEN_URL n the .env file with your values you obtained earlier.
-4. Run the script to generate a token by running `python3 jwt-profile-token-generator.py` in the terminal.
-5. Copy the printed access token and set the value to a shell variable called `TOKEN` as shown below: 
+1. cd to this directory: `cd service-user-client-credentials`
+2. Replace the values of PROJECT_ID, ZITADEL_DOMAIN, ZITADEL_TOKEN_URL, CLIENT_ID, and CLIENT_SECRET in the .env file with your values you obtained earlier.
+3. Run the script to generate a token by running `python3 client-credentials-token-generator.py` in the terminal.
+4. Copy the printed access token and set the value to a shell variable called `TOKEN` as shown below: 
 
 <img
     src="screenshots/9.png"
@@ -217,7 +208,7 @@ In order to access this route, you must create the role `read:messages` in your 
     alt="Register the API"
 />
 
-9. You will now see the your service user has been assigned the role **read:messages**. 
+9. You will now see that your service user has been assigned the role **read:messages**. 
 <img
     src="screenshots/scopes/9.png"
     width="75%"
@@ -232,7 +223,5 @@ You should get a response with Status Code 200 and the following message.
 
 `{"message":"Private, scoped route - You need to be authenticated and have the role read:messages to see this."}`
 
-## 5. Reference
-https://zitadel.com/docs/guides/integrate/serviceusers#3-with-this-jwt-request-an-oauth-token-from-zitadel
 
 

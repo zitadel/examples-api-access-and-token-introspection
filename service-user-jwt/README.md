@@ -26,7 +26,7 @@
 />
 
 
-3. Next, add the details of the service user and select either **Bearer** or **JWT** for Access Token Type and click on **Create**. For this example, we will select **JWT**. 
+3. Next, add the details of the service user and select either **Bearer** or **JWT** for **Access Token Type** and click on **Create**. For this example, we will select **JWT**. 
 
 <img
     src="screenshots/3.png"

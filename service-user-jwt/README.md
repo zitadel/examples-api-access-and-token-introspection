@@ -8,7 +8,7 @@
 
 ## 1. Create a Service User and Private/Public Keys in ZITADEL <a name="1"></a>
 
-1. Go to the **Users** tab in your organization as shown below and click on the **Service User** tab.
+1. Go to the **Users** tab in your organization as shown below and click on the **Service Users** tab.
 
 <img
     src="screenshots/1.png"

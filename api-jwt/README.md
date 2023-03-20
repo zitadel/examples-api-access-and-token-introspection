@@ -6,7 +6,7 @@
 
 <img
     src="screenshots/1.png"
-    width="100%"
+    width="75%"
     alt="Register the API"
 />
 

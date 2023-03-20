@@ -110,9 +110,9 @@
 
 The API has three routes:
 
-"/api/public" - No access token is required.
-"/api/private" - A valid access token is required.
-"/api/private-scoped" - A valid access token and a "read:messages" scope are required.
+- "/api/public" - No access token is required.
+- "/api/private" - A valid access token is required.
+- "/api/private-scoped" - A valid access token and a "read:messages" scope are required.
 
 
 1. cd to this directory: `cd api-jwt`

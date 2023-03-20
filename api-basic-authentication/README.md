@@ -16,7 +16,7 @@
     alt="Register the API"
 />
 
-2.  Give a name to your application (Test API is the name given below) and select type **API**. 
+2.  Give a name to your application (Test API 2 is the name given below) and select type **API**. 
 
 <img
     src="screenshots/2.png"
@@ -24,7 +24,7 @@
     alt="Register the API"
 />
 
-3. Select **JWT** as the authentication method and click **Continue**.  
+3. Select **Basic** as the authentication method and click **Continue**.  
 
 <img
     src="screenshots/3.png"

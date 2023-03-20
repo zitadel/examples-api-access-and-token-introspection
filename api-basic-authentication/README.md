@@ -1,7 +1,7 @@
 # Secure an API in ZITADEL using Basic Authentication
 
 ## ToC
-1. [Register the API in ZITADEL(#1)
+1. [Register the API in ZITADEL](#1)
 2. [Run this API](#2)
 3. [Invoke this API](#3)
 

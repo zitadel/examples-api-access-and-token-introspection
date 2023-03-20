@@ -220,7 +220,7 @@ In order to access this route, you must create the role `read:messages` in your 
     alt="Register the API"
 />
 
-Regenerate the token and invoke the protected resource again: 
+Regenerate the token (remember to assign the TOKEN to the new access token) and invoke the protected resource again: 
 
 `curl -X GET -H "Authorization: Bearer $TOKEN" http://localhost:5000/api/private-scoped`
 

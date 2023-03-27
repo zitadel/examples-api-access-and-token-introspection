@@ -112,7 +112,7 @@ You must have the backend API running and secured with one of the following ways
     alt="Register the API"
 />
 
-## 4. Invoke the API with Token
+## 4. Invoke the API with Token <a name="4"></a>
 
 The API has three routes:
 

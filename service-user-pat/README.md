@@ -3,7 +3,7 @@
 ## ToC
 1. [Prerequisites](#1)
 2. [Create a Service User and Personal Access Token(PAT) in ZITADEL](#2)
-3. [Invoke the API](#3)
+3. [Invoke the API with Token](#3)
 
 ## 1. Prerequisites <a name="1"></a>
 
@@ -78,7 +78,7 @@ You must have the backend API running and secured with one of the following ways
 
 
 
-## 3. Invoke the API with Token
+## 3. Invoke the API with Token <a name="3"></a>
 
 The API has three routes:
 

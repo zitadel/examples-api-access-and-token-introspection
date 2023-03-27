@@ -4,7 +4,7 @@
 1. [Prerequisites](#1)
 2. [Create a Service User and Private/Public Keys in ZITADEL](#2)
 3. [Generate a Token](#3)
-4. [Invoke the API](#4)
+4. [Invoke the API with Token](#4)
 
 ## 1. Prerequisites <a name="1"></a>
 
@@ -116,7 +116,7 @@ You must have the backend API running and secured with one of the following ways
     alt="Register the API"
 />
 
-## 4. Invoke the API with Token
+## 4. Invoke the API with Token <a name="4"></a>
 
 The API has three routes:
 

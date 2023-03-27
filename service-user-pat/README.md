@@ -9,8 +9,8 @@
 
 You must have the backend API running and secured with one of the following ways (follow either link for instructions on how to set up and run the API): 
 
-1. [JSON Web Token (JWT) Profile](https://github.com/dakshitha/api-access-and-token-introspection/tree/main/api-jwt)
-2. [Basic Authentication](https://github.com/dakshitha/api-access-and-token-introspection/tree/main/api-basic-authentication)
+1. [JSON Web Token (JWT) Profile](https://github.com/zitadel/examples-api-access-and-token-introspection/tree/main/api-jwt)
+2. [Basic Authentication](https://github.com/zitadel/examples-api-access-and-token-introspection/tree/main/api-basic-authentication)
 
 ## 2. Create a Service User with a Personal Access Token(PAT) in ZITADEL <a name="2"></a>
 

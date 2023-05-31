@@ -124,8 +124,8 @@ The API has three routes:
 ## 3. Invoke this API <a name="3"></a>
 
 Obtain an access token as a ZITADEL service user via one of the following approaches (click the links to see instructions on how to obtain the token and invoke this API): 
-- [JSON Web Token Profile](https://github.com/dakshitha/api-access-and-token-introspection/tree/main/service-user-jwt)
-- [Client Credentials](https://github.com/dakshitha/api-access-and-token-introspection/tree/main/service-user-client-credentials) 
-- [Personal Access Token](https://github.com/dakshitha/api-access-and-token-introspection/tree/main/service-user-pat)
+- [JSON Web Token Profile](https://github.com/zitadel/examples-api-access-and-token-introspection/tree/main/service-user-jwt)
+- [Client Credentials](https://github.com/zitadel/examples-api-access-and-token-introspection/tree/main/service-user-client-credentials) 
+- [Personal Access Token](https://github.com/zitadel/examples-api-access-and-token-introspection/tree/main/service-user-pat)
 
 

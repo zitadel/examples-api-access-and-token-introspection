@@ -48,7 +48,7 @@
     alt="Register the API"
 />
 
-6. When you click on **URLs** on the left, you will see the relevant OIDC URLs. Note down the **issuer** URL, **token_endpoint** and **introspection_endpoint**.  
+6. When you click **URLs** on the left, you will see the relevant OIDC URLs. Note down the **issuer** URL, **token_endpoint** and **introspection_endpoint**.  
 
 <img
     src="screenshots/6.png"

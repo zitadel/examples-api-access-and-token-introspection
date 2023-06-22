@@ -42,5 +42,6 @@ If there are client APIs or systems that need to access other protected APIs, th
 - Create a free ZITADEL account here - https://zitadel.cloud/
 - Create an instance as explained [here](https://zitadel.com/docs/guides/start/quickstart#2-create-your-first-instance). 
 - Create a new project in your instance by following the steps [here](https://zitadel.com/docs/guides/start/quickstart#2-create-your-first-instance).
+- Make sure that you replace the values in the .env file in each project with the values you obtain from ZITADEL.
 
 

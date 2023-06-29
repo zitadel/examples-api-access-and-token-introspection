@@ -1,4 +1,4 @@
-# Secure an API in ZITADEL using the JSON Web Token Profile
+# Secure an API using the JSON Web Token Profile in ZITADEL 
 
 ## ToC
 1. [Register the API in ZITADEL and Generate Private and Public Keys](#1)

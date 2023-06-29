@@ -1,4 +1,4 @@
-# Secure an API in ZITADEL using Basic Authentication
+# Secure an API using Basic Authentication in ZITADEL 
 
 ## ToC
 1. [Register the API in ZITADEL](#1)

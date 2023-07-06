@@ -1,5 +1,6 @@
 # api-access-and-token-introspection
 
+Find a detailed explanation of the concepts covered in these examples in this [blog post](https://zitadel.com/blog/api-access-and-introspection). 
 
 ## API Application:
 If you have an API that behaves as an OAuth resource server that can be accessed by user-facing applications and need to validate an access token by calling the ZITADEL introspection API, you can use the following methods to register these APIs in ZITADEL: 
